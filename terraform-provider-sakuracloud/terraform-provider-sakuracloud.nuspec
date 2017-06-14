@@ -11,62 +11,54 @@
     <title>terraform-provider-sakuracloud (Install)</title>
     <authors>Kazumichi Yamamoto (@yamamoto-febc)</authors>
     <projectUrl>https://github.com/sacloud/terraform-provider-sakuracloud</projectUrl>
+    <!--<projectSourceUrl>https://github.com/sacloud/terraform-provider-sakuracloud</projectSourceUrl>-->
     <!--<iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/terraform-provider-sakuracloud.png</iconUrl>-->
     <copyright>Kazumichi Yamamoto (@yamamoto-febc)</copyright>
     <licenseUrl>https://raw.githubusercontent.com/sacloud/terraform-provider-sakuracloud/master/LICENSE</licenseUrl>
-    <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <projectSourceUrl>https://github.com/sacloud/terraform-provider-sakuracloud</projectSourceUrl>
     <docsUrl>https://sacloud.github.io/terraform-provider-sakuracloud/</docsUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <packageSourceUrl>https://github.com/sacloud/chocolatey</packageSourceUrl>
     <!--<mailingListUrl></mailingListUrl>-->
     <!--<bugTrackerUrl></bugTrackerUrl>-->
-    <tags>terraform-provider-sakuracloud terraform sakuracloud</tags>
+    <tags>admin terraform sakuracloud</tags>
     <summary>Terraform for Sakura Cloud</summary>
     <description>
-    It is a plug-in for operating SAKURA cloud from Terraform.
-    This plug-in is developed by SAKURA cloud user communication as SAKURA Internet Inc. official recognition tool.
-    -----
-    Terraformからさくらのクラウドを操作するためのプラグインです。
-    このプラグインはさくらインターネット公認ツールとしてさくらのクラウドユーザコミュニティによって開発されています。
+# EN
+  - It is a plug-in for operating SAKURA cloud from Terraform.
+  - This plug-in is developed by SAKURA cloud user communication as SAKURA Internet Inc. official recognition tool.
+
+----
+
+# JP
+  - Terraformからさくらのクラウドを操作するためのプラグインです。
+  - このプラグインはさくらインターネット公認ツールとしてさくらのクラウドユーザコミュニティによって開発されています。
     </description>
     <releaseNotes>
-    # ChangeLog
-    - Update database docs #136
-    - Installation of golint on TravisCI #138
-    - Change attribute name in "Disk resource"
-    # Change attribute name in "Disk resource"
-    The attribute name of "Disk resource" has been changed.
-    Old: connection => New: connector
-    Those who use the corresponding attribute need to modify "tf file".
-    -----
-    # ChangeLog
-    - データベースドキュメント修正 #136
-    - TravisCI上でのgolintインストール #138
-    - ディスクリソースでの属性名変更 #140
-    # 属性名変更について
-    ディスクリソースにて属性名が変更となりました。
-    旧: connection => 新: connector
-    該当の属性をご利用されている方はtfファイルの修正が必要となります。
+# EN
+## ChangeLog
+  - Update database docs #136
+  - Installation of golint on TravisCI #138
+  - Change attribute name in "Disk resource"
+
+## Change attribute name in "Disk resource"   
+  - The attribute name of "Disk resource" has been changed.
+  - Old: connection => New: connector
+  - Those who use the corresponding attribute need to modify "tf file".
+
+----
+
+# JP
+## ChangeLog
+  - データベースドキュメント修正 #136
+  - TravisCI上でのgolintインストール #138
+  - ディスクリソースでの属性名変更 #140
+
+## 属性名変更について
+  - ディスクリソースにて属性名が変更となりました。
+  - 旧: connection => 新: connector
+  - 該当の属性をご利用されている方はtfファイルの修正が必要となります。
     </releaseNotes>
     <!-- =============================== -->      
-
-    <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
-    <!--<dependencies>
-      <dependency id="" version="__MINIMUM_VERSION__" />
-      <dependency id="" version="[__EXACT_VERSION__]" />
-      <dependency id="" version="[_MIN_VERSION_INCLUSIVE, MAX_VERSION_INCLUSIVE]" />
-      <dependency id="" version="[_MIN_VERSION_INCLUSIVE, MAX_VERSION_EXCLUSIVE)" />
-      <dependency id="" />
-      <dependency id="chocolatey-core.extension" version="1.1.0" />
-    </dependencies>-->
-    <!-- chocolatey-core.extension - https://chocolatey.org/packages/chocolatey-core.extension
-         - You want to use Get-UninstallRegistryKey on less than 0.9.10 (in chocolateyUninstall.ps1)
-         - You want to use Get-PackageParameters and on less than 0.11.0
-         - You want to take advantage of other functions in the core community maintainer's team extension package
-    -->
-
-    <!--<provides>NOT YET IMPLEMENTED</provides>-->
-    <!--<conflicts>NOT YET IMPLEMENTED</conflicts>-->
-    <!--<replaces>NOT YET IMPLEMENTED</replaces>-->
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
