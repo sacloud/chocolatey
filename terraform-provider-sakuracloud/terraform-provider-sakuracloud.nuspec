@@ -14,13 +14,13 @@
     <!--<projectSourceUrl>https://github.com/sacloud/terraform-provider-sakuracloud</projectSourceUrl>-->
     <!--<iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/terraform-provider-sakuracloud.png</iconUrl>-->
     <copyright>Kazumichi Yamamoto (@yamamoto-febc)</copyright>
-    <licenseUrl>https://raw.githubusercontent.com/sacloud/terraform-provider-sakuracloud/master/LICENSE</licenseUrl>
+    <licenseUrl>https://github.com/sacloud/terraform-provider-sakuracloud/blob/master/LICENSE</licenseUrl>
     <docsUrl>https://sacloud.github.io/terraform-provider-sakuracloud/</docsUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <packageSourceUrl>https://github.com/sacloud/chocolatey</packageSourceUrl>
     <!--<mailingListUrl></mailingListUrl>-->
     <!--<bugTrackerUrl></bugTrackerUrl>-->
-    <tags>admin terraform sakuracloud</tags>
+    <tags>admin terraform sakuracloud provider</tags>
     <summary>Terraform for Sakura Cloud</summary>
     <description>
 # EN
