@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- == PACKAGE SPECIFIC SECTION == -->
+    <id>sackerel</id>
+    <version>0.0.3</version>
+    <owners>223n (@223n)</owners>
+    <!-- ============================== -->
+
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <title>sackerel (Install)</title>
+    <authors>Kazumichi Yamamoto (@yamamoto-febc)</authors>
+    <projectUrl>https://github.com/sacloud/sackerel</projectUrl>
+    <!--<projectSourceUrl>https://github.com/sacloud/sackerel</projectSourceUrl>-->
+    <iconUrl>https://cdn.rawgit.com/sacloud/sackerel/master/docs/images/logo-mini.png</iconUrl>
+    <copyright>Kazumichi Yamamoto (@yamamoto-febc)</copyright>
+    <licenseUrl>https://github.com/sacloud/sackerel/blob/master/LICENSE</licenseUrl>
+    <docsUrl>https://github.com/sacloud/sackerel</docsUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <packageSourceUrl>https://github.com/sacloud/chocolatey</packageSourceUrl>
+    <!--<mailingListUrl></mailingListUrl>-->
+    <!--<bugTrackerUrl></bugTrackerUrl>-->
+    <tags>admin sakuracloud mackerel</tags>
+    <summary>sackerel</summary>
+    <description>
+# EN
+  - "Sackerel" is an integration tool of "SAKURA Cloud" and "Mackerel".
+  - You can link servers, databases, routers and other resources on SAKURA cloud to Mackerel.
+  - By activating "sackerel", if you create or update a resource on SAKURA cloud, it will be automatically linked to Mackerel.
+  - For cooperation, you do not need to install the Mackerel agent on each resource.
+  - Because hosts, services and roles are created automatically on Mackerel, you can quickly view graphs and set alerts in Mackerel.
+
+----
+
+# JP
+  - sackerelはさくらのクラウドとMackerelのインテグレーションツールです。
+  - さくらのクラウド上のサーバーやデータベース、ルーターなどのリソースをMackerelへ連携する事ができます。
+  - sackerelを起動しておけば、さくらのクラウド上にリソースを作成/更新するだけで自動でMackerelへ連携されます。
+  - 連携のためにMackerelエージェントを各リソースにインストールする必要はありません。
+  - Mackerel上でのホスト/サービス/ロールは自動作成されるため、すぐにMackerelでグラフを見たりアラートの設定を行ったりできます。
+    </description>
+    <releaseNotes>
+# EN
+## ChangeLog
+### Core function
+
+- Do not change / update
+
+### Bug Fix / Other
+
+- Set UserAgent when using SAKURA API API (Sackerel / version format)
+- Dependent library (github.com/sacloud/libsacloud) updated
+- Job queue specification error correction
+
+----
+
+# JP
+## ChangeLog
+### コア機能
+
+- 変更/更新しない
+
+### バグ修正/その他
+
+- さくらのAPI API利用時のUserAgentを設定（Sackerel /バージョン形式）
+- 依存ライブラリ（github.com/sacloud/libsacloud）更新
+- ジョブキュー指定誤り修正
+    </releaseNotes>
+    <!-- =============================== -->      
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
