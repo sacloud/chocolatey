@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- == PACKAGE SPECIFIC SECTION == -->
+    <id>terraform-provider-sakuracloud</id>
+    <version>0.10.1</version>
+    <owners>223n (@223n)</owners>
+    <!-- ============================== -->
+
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <title>terraform-provider-sakuracloud (Install)</title>
+    <authors>Kazumichi Yamamoto (@yamamoto-febc)</authors>
+    <projectUrl>https://github.com/sacloud/terraform-provider-sakuracloud</projectUrl>
+    <!--<projectSourceUrl>https://github.com/sacloud/terraform-provider-sakuracloud</projectSourceUrl>-->
+    <!--<iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/terraform-provider-sakuracloud.png</iconUrl>-->
+    <copyright>Kazumichi Yamamoto (@yamamoto-febc)</copyright>
+    <licenseUrl>https://github.com/sacloud/terraform-provider-sakuracloud/blob/master/LICENSE</licenseUrl>
+    <docsUrl>https://sacloud.github.io/terraform-provider-sakuracloud/</docsUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <packageSourceUrl>https://github.com/sacloud/chocolatey</packageSourceUrl>
+    <!--<mailingListUrl></mailingListUrl>-->
+    <!--<bugTrackerUrl></bugTrackerUrl>-->
+    <tags>admin terraform sakuracloud provider</tags>
+    <summary>Terraform for Sakura Cloud</summary>
+    <description>
+# EN
+  - It is a plug-in for operating SAKURA cloud from Terraform.
+  - This plug-in is developed by SAKURA cloud user communication as SAKURA Internet Inc. official recognition tool.
+
+----
+
+# JP
+  - Terraformからさくらのクラウドを操作するためのプラグインです。
+  - このプラグインはさくらインターネット公認ツールとしてさくらのクラウドユーザコミュニティによって開発されています。
+    </description>
+    <releaseNotes>
+# EN
+## ChangeLog
+  - Update database docs #136
+  - Installation of golint on TravisCI #138
+  - Change attribute name in "Disk resource"
+
+## Change attribute name in "Disk resource"   
+  - The attribute name of "Disk resource" has been changed.
+  - Old: connection => New: connector
+  - Those who use the corresponding attribute need to modify "tf file".
+
+----
+
+# JP
+## ChangeLog
+  - データベースドキュメント修正 #136
+  - TravisCI上でのgolintインストール #138
+  - ディスクリソースでの属性名変更 #140
+
+## 属性名変更について
+  - ディスクリソースにて属性名が変更となりました。
+  - 旧: connection => 新: connector
+  - 該当の属性をご利用されている方はtfファイルの修正が必要となります。
+    </releaseNotes>
+    <!-- =============================== -->      
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
