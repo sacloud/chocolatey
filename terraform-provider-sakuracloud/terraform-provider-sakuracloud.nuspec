@@ -3,7 +3,7 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>terraform-provider-sakuracloud</id>
-    <version>0.10.1</version>
+    <version>0.10.2</version>
     <owners>223n (@223n)</owners>
     <!-- ============================== -->
 
@@ -20,7 +20,7 @@
     <packageSourceUrl>https://github.com/sacloud/chocolatey</packageSourceUrl>
     <!--<mailingListUrl></mailingListUrl>-->
     <!--<bugTrackerUrl></bugTrackerUrl>-->
-    <tags>admin terraform sakuracloud provider</tags>
+    <tags>terraform sakuracloud provider</tags>
     <summary>Terraform for Sakura Cloud</summary>
     <description>
 # EN
@@ -36,27 +36,21 @@
     <releaseNotes>
 # EN
 ## ChangeLog
-  - Update database docs #136
-  - Installation of golint on TravisCI #138
-  - Change attribute name in "Disk resource"
-
-## Change attribute name in "Disk resource"   
-  - The attribute name of "Disk resource" has been changed.
-  - Old: connection => New: connector
-  - Those who use the corresponding attribute need to modify "tf file".
+  - Fix typos in documention #142
+  - Fix parameter type in document #143
+  - Simple monitoring: Correction of communication processing to port of tfstate #145
+  - Add publish archive of "Windows 2016 SQL Server Standard (RDS + Office)" #146
+  - Remove publish archive of "SiteGuard" #147
 
 ----
 
 # JP
 ## ChangeLog
-  - データベースドキュメント修正 #136
-  - TravisCI上でのgolintインストール #138
-  - ディスクリソースでの属性名変更 #140
-
-## 属性名変更について
-  - ディスクリソースにて属性名が変更となりました。
-  - 旧: connection => 新: connector
-  - 該当の属性をご利用されている方はtfファイルの修正が必要となります。
+  - ドキュメントのタイポ修正 #142
+  - ドキュメント内のパラメータの型を修正 #143
+  - シンプル監視:portのtfstateへの反映処理修正 #145
+  - Windows2016 SQLServer Standard(RDS+Office)パブリックアーカイブ追加 #146
+  - SiteGuardパブリックアーカイブ除去 #147
     </releaseNotes>
     <!-- =============================== -->      
   </metadata>
