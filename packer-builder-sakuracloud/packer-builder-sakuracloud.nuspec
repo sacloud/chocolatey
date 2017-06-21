@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- == PACKAGE SPECIFIC SECTION == -->
+    <id>packer-builder-sakuracloud</id>
+    <version>0.1.1</version>
+    <owners>223n (@223n)</owners>
+    <!-- ============================== -->
+
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <title>packer-builder-sakuracloud (Install)</title>
+    <authors>Kazumichi Yamamoto (@yamamoto-febc)</authors>
+    <projectUrl>https://github.com/sacloud/packer-builder-sakuracloud</projectUrl>
+    <!--<projectSourceUrl>https://github.com/sacloud/packer-builder-sakuracloud</projectSourceUrl>-->
+    <!--<iconUrl>https://cdn.rawgit.com/sacloud/images/1fe15a73/usacloud_logo.svg</iconUrl>-->
+    <copyright>Kazumichi Yamamoto (@yamamoto-febc)</copyright>
+    <licenseUrl>https://github.com/sacloud/packer-builder-sakuracloud/blob/master/LICENSE</licenseUrl>
+    <docsUrl>https://github.com/sacloud/packer-builder-sakuracloud/</docsUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <packageSourceUrl>https://github.com/sacloud/chocolatey</packageSourceUrl>
+    <!--<mailingListUrl></mailingListUrl>-->
+    <!--<bugTrackerUrl></bugTrackerUrl>-->
+    <tags>packer plugin sakuracloud</tags>
+    <summary>packer builder for sakuracloud</summary>
+    <description>
+# EN
+  - "packer-builder-sakuracloud" is a Packer plug-in for SAKURA Cloud.
+
+## Overview
+  - "packer-builder-sakuracloud" is a Packer plug-in for created archives (templates of already built OS) with Packer in SAKURA Cloud.
+
+----
+
+# JP
+  - "packer-builder-sakuracloud"は、さくらのクラウド用のPackerプラグインです。
+
+## 概要
+  - packer-builder-sakuracloudは、さくらのクラウドでのアーカイブ（構築済みOSのテンプレート）をPackerで作成するためのPackerプラグインです。
+    </description>
+    <releaseNotes>
+# EN
+## ChangeLog
+  - Update public archives
+    - Delete the "SiteGuard" public archive
+    - Add publish archive of "Windows 2016 SQL Server Standard (RDS + Office)"
+
+----
+
+# JP
+## ChangeLog
+  - パブリックアーカイブを更新
+    - Windows2016 SQLServer Standard(RDS+Office)パブリックアーカイブ追加
+    - SiteGuardパブリックアーカイブ除去
+    </releaseNotes>
+    <!-- =============================== -->      
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
