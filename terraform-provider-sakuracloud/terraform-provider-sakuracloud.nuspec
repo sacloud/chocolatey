@@ -3,7 +3,7 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>terraform-provider-sakuracloud</id>
-    <version>0.10.2</version>
+    <version>0.10.3</version>
     <owners>223n (@223n)</owners>
     <!-- ============================== -->
 
@@ -36,21 +36,15 @@
     <releaseNotes>
 # EN
 ## ChangeLog
-  - Fix typos in documention #142
-  - Fix parameter type in document #143
-  - Simple monitoring: Correction of communication processing to port of tfstate #145
-  - Add publish archive of "Windows 2016 SQL Server Standard (RDS + Office)" #146
-  - Remove publish archive of "SiteGuard" #147
+  - Introduced "textlint" #150
+  - Responding to lack of numerical parameter in "Linux i386 version" #151
 
 ----
 
 # JP
 ## ChangeLog
-  - ドキュメントのタイポ修正 #142
-  - ドキュメント内のパラメータの型を修正 #143
-  - シンプル監視:portのtfstateへの反映処理修正 #145
-  - Windows2016 SQLServer Standard(RDS+Office)パブリックアーカイブ追加 #146
-  - SiteGuardパブリックアーカイブ除去 #147
+  - Textlint導入 #150
+  - Linux i386版での数値型パラメータ欠落への対応 #151
     </releaseNotes>
     <!-- =============================== -->      
   </metadata>

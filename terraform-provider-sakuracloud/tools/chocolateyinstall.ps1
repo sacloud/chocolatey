@@ -1,13 +1,9 @@
-﻿# IMPORTANT: Before releasing this package, copy/paste the next 2 lines into PowerShell to remove all comments from this file:
-#   $f='c:\path\to\thisFile.ps1'
-#   gc $f | ? {$_ -notmatch "^\s*#"} | % {$_ -replace '(^.*?)\s*?[^``]#.*','$1'} | Out-File $f+".~" -en utf8; mv -fo $f+".~" $f
-
-$ErrorActionPreference = 'Stop';
+﻿$ErrorActionPreference = 'Stop';
 
 $packageName= $env:ChocolateyPackageName
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url        = 'https://github.com/sacloud/terraform-provider-sakuracloud/releases/download/v0.10.2/terraform-provider-sakuracloud_windows-386.zip'
-$url64      = 'https://github.com/sacloud/terraform-provider-sakuracloud/releases/download/v0.10.2/terraform-provider-sakuracloud_windows-amd64.zip'
+$url        = 'https://github.com/sacloud/terraform-provider-sakuracloud/releases/download/v0.10.3/terraform-provider-sakuracloud_windows-386.zip'
+$url64      = 'https://github.com/sacloud/terraform-provider-sakuracloud/releases/download/v0.10.3/terraform-provider-sakuracloud_windows-amd64.zip'
 
 $packageArgs = @{
   packageName   = $packageName
@@ -15,13 +11,12 @@ $packageArgs = @{
   url           = $url
   url64bit      = $url64
   softwareName  = 'terraform-provider-sakuracloud*'
-  checksum      = 'BCE4F85551EFE12E5A8A6C0F381BF4A031B29A6EB80FFA9C4755A88532733C5C648020F76B9FAAFD1F60ABCA1F01BD375D4DD299E8BEB2F27AC9DEBBAC8945B1'
-  checksumType  = 'sha512' #default is md5, can also be sha1, sha256 or sha512
-  checksum64    = '44C78854AC41DD21D2A3C63F5CF782844577EFF4C424CCA85215FFF5E82E2E502DEFFFF1FB72D0DE1D4FB5BDD10D320372910B83EA31CE50861CBEF41B74A53A'
+  checksum      = 'EC7E4E3B2FC9FEA93EA57653CAD0CBD4AC0086E067611373200EFB9C1955EF3141AE504401F18BC0399E5012D74EC9F56D98263736DE8E603B3E71EDEB3F75C2'
+  checksumType  = 'sha512'
+  checksum64    = '4D0F7175A268D621E5C28DA9A170161461EDD338DDA27919FAA93104565F05CF6188AD24A32FEE78CE8E048D8EA59717F5ABDB5C254386BC50FECC242AF7CB24'
   checksumType64= 'sha512'
 }
 
-# https://chocolatey.org/docs/helpers-install-chocolatey-zip-package
 Install-ChocolateyZipPackage @packageArgs
 
 # Check .terraformrc file
