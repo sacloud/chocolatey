@@ -3,7 +3,7 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>terraform-provider-sakuracloud</id>
-    <version>0.10.3</version>
+    <version>0.10.4</version>
     <owners>223n (@223n)</owners>
     <!-- ============================== -->
 
@@ -36,15 +36,17 @@
     <releaseNotes>
 # EN
 ## ChangeLog
-  - Introduced "textlint" #150
-  - Responding to lack of numerical parameter in "Linux i386 version" #151
+  - Add textlint rule #153
+  - Support Linuxbrew #155
+  - Add throttling to cloud API call #157
 
 ----
 
 # JP
 ## ChangeLog
-  - Textlint導入 #150
-  - Linux i386版での数値型パラメータ欠落への対応 #151
+  - textlintルール追加 #153
+  - Linuxbrew対応 #155
+  - クラウドAPI呼び出しへのスロットリング追加 #157
     </releaseNotes>
     <!-- =============================== -->      
   </metadata>
