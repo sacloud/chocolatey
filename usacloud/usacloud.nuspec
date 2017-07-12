@@ -3,7 +3,7 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>usacloud</id>
-    <version>0.0.12</version>
+    <version>0.0.13</version>
     <owners>223n (@223n)</owners>
     <!-- ============================== -->
 
@@ -46,17 +46,31 @@
     <releaseNotes>
 # EN
 ## ChangeLog
-  - Add publish archive of "Windows 2016 SQL Server Standard (RDS + Office)" #155
-  - Add document related to server operation #156
-  - Delete the "SiteGuard" public archive #157
+  - Add textlint #159, #161
+  - Add command to get maintenance information #162
+  - Change field names in parameter template to hyphens separated #168
+  - Add --selector option #171
+  - Support "server ssh-exec" command execution with multiple hosts #173
+  - Corresponds to target specification of server name with 'server scp' command #174
+
+## Remarks
+  - For details, please check CHANGELOG (Japanese) of GitHub.
+  - https://github.com/sacloud/usacloud/releases/tag/v0.0.13
 
 ----
 
 # JP
 ## ChangeLog
-  - Windows2016 SQLServer Standard(RDS+Office)パブリックアーカイブ追加 #155
-  - サーバ操作関連のドキュメント追加 #156
-  - SiteGuardパブリックアーカイブ除去 #157
+  - textlint導入 #159 , #161
+  - メンテナンス情報取得コマンド追加 #162
+  - パラメータテンプレートでのフィールド名をハイフン区切りに変更 #168
+  - --selectorオプション追加 #171
+  - server ssh-execの複数ホストでのコマンド実行対応 #173
+  - server scpコマンドでのサーバ名での対象指定 #174
+
+## Remarks
+  - 詳しくは、GitHubのCHANGELOG(日本語)をご確認ください。
+  - https://github.com/sacloud/usacloud/releases/tag/v0.0.13
     </releaseNotes>
     <!-- =============================== -->      
   </metadata>
