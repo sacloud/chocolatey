@@ -1,3 +1,5 @@
 *.nupkg
 usacloud/usacloud_windows-386.zip
 usacloud/usacloud_windows-amd64.zip
+terraform-provider-sakuracloud/terraform-provider-sakuracloud_windows-386.zip
+terraform-provider-sakuracloud/terraform-provider-sakuracloud_windows-amd64.zip

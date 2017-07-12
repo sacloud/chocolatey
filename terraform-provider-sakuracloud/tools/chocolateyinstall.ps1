@@ -1,20 +1,24 @@
 ﻿$ErrorActionPreference = 'Stop';
 
-$packageName= $env:ChocolateyPackageName
-$toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url        = 'https://github.com/sacloud/terraform-provider-sakuracloud/releases/download/v0.10.3/terraform-provider-sakuracloud_windows-386.zip'
-$url64      = 'https://github.com/sacloud/terraform-provider-sakuracloud/releases/download/v0.10.3/terraform-provider-sakuracloud_windows-amd64.zip'
+$packageName  = $env:ChocolateyPackageName;
+$toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)";
+$softwareName = 'terraform-provider-sakuracloud*';
+$url          = 'https://github.com/sacloud/terraform-provider-sakuracloud/releases/download/v0.10.4/terraform-provider-sakuracloud_windows-386.zip';
+$url64        = 'https://github.com/sacloud/terraform-provider-sakuracloud/releases/download/v0.10.4/terraform-provider-sakuracloud_windows-amd64.zip';
+$checkSum     = 'sha512';
+$hash32       = '949F30F2204999D3F79627B51D163ED0D60663CA9ADDE6F497D761C2F06E16F2A865C7A9AA81F9932D089D9E598B20C5F44B81F0FB7BCE9F1A778ADEAAECA66C';
+$hash64       = 'B158D4B5771FB84EB3346F99FDBEB53739E3A3009909C9606BD04EB5EFBAB0B1040791AD1DEA7F27913ED14BE4BC3107E9EAC9B7C2E8BD248E19EC944C227D13';
 
 $packageArgs = @{
   packageName   = $packageName
   unzipLocation = $toolsDir
   url           = $url
   url64bit      = $url64
-  softwareName  = 'terraform-provider-sakuracloud*'
-  checksum      = 'EC7E4E3B2FC9FEA93EA57653CAD0CBD4AC0086E067611373200EFB9C1955EF3141AE504401F18BC0399E5012D74EC9F56D98263736DE8E603B3E71EDEB3F75C2'
-  checksumType  = 'sha512'
-  checksum64    = '4D0F7175A268D621E5C28DA9A170161461EDD338DDA27919FAA93104565F05CF6188AD24A32FEE78CE8E048D8EA59717F5ABDB5C254386BC50FECC242AF7CB24'
-  checksumType64= 'sha512'
+  softwareName  = $softwareName
+  checksum      = $hash32
+  checksumType  = $checkSum
+  checksum64    = $hash64
+  checksumType64= $checkSum
 }
 
 Install-ChocolateyZipPackage @packageArgs
