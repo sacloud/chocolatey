@@ -3,7 +3,7 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>terraform-provider-sakuracloud</id>
-    <version>0.10.4</version>
+    <version>0.11.0</version>
     <owners>223n (@223n)</owners>
     <!-- ============================== -->
 
@@ -36,17 +36,37 @@
     <releaseNotes>
 # EN
 ## ChangeLog
-  - Add textlint rule #153
-  - Support Linuxbrew #155
-  - Add throttling to cloud API call #157
+  - Fixed packet filter setting example of document #159
+  - Support Object storage #161
+  - Fixed resource regeneration judgment at packet filter update #162
+  - Celan up the sample .tf file #163
+  - Support "go get" #164
+  - Format of tf file using "terraform fmt" command #165
+  - Add icon (sakuracloud_icon) #167
+  - Add Server connector resource #168
+  - Code improvements #169
+
+## Remarks
+  - For details, please check CHANGELOG (Japanese) of GitHub.
+  - https://github.com/sacloud/usacloud/releases/tag/v0.0.13
 
 ----
 
 # JP
 ## ChangeLog
-  - textlintルール追加 #153
-  - Linuxbrew対応 #155
-  - クラウドAPI呼び出しへのスロットリング追加 #157
+  - ドキュメントのパケットフィルタ設定例を修正 #159
+  - オブジェクトストレージ対応 #161
+  - パケットフィルタ更新時のリソース再生成判定を修正 #162
+  - サンプル.tfファイルのクリーンアップ #163
+  - go get対応 #164
+  - tfファイルのフォーマット #165
+  - アイコン(sakuracloud_icon)追加 #167
+  - サーバ コネクタリソース追加 #168
+  - コード改善 #169
+
+## Remarks
+  - 詳しくは、GitHubのCHANGELOG(日本語)をご確認ください。
+  - https://github.com/sacloud/terraform-provider-sakuracloud/releases/tag/v0.11.0
     </releaseNotes>
     <!-- =============================== -->      
   </metadata>
