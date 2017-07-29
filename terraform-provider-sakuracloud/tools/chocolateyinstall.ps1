@@ -3,11 +3,11 @@
 $packageName  = $env:ChocolateyPackageName;
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)";
 $softwareName = 'terraform-provider-sakuracloud*';
-$url          = 'https://github.com/sacloud/terraform-provider-sakuracloud/releases/download/v0.10.4/terraform-provider-sakuracloud_windows-386.zip';
-$url64        = 'https://github.com/sacloud/terraform-provider-sakuracloud/releases/download/v0.10.4/terraform-provider-sakuracloud_windows-amd64.zip';
+$url          = 'https://github.com/sacloud/terraform-provider-sakuracloud/releases/download/v0.11.0/terraform-provider-sakuracloud_windows-386.zip';
+$url64        = 'https://github.com/sacloud/terraform-provider-sakuracloud/releases/download/v0.11.0/terraform-provider-sakuracloud_windows-amd64.zip';
 $checkSum     = 'sha512';
-$hash32       = '949F30F2204999D3F79627B51D163ED0D60663CA9ADDE6F497D761C2F06E16F2A865C7A9AA81F9932D089D9E598B20C5F44B81F0FB7BCE9F1A778ADEAAECA66C';
-$hash64       = 'B158D4B5771FB84EB3346F99FDBEB53739E3A3009909C9606BD04EB5EFBAB0B1040791AD1DEA7F27913ED14BE4BC3107E9EAC9B7C2E8BD248E19EC944C227D13';
+$hash32       = '0903E3AEA47B8B276709084D989B4E39604DEB5019CDD721D39D38F05ED07DFDAE64103084EF3BFBD5502EB777FD8F6799DB3BE008D943BFF3ECF9EBF9350030';
+$hash64       = 'E939CBD8D99078161F65EB02D9EAF7D6B4197A3A9BB7DC7660A68FA29A82C537B535B18386B94F7B3117BE9797D4ED036B79D872514B01D31F633F50E9B47D6D';
 
 $packageArgs = @{
   packageName   = $packageName
