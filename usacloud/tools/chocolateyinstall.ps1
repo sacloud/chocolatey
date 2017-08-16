@@ -7,11 +7,11 @@ $ErrorActionPreference = 'Stop';
 $packageName  = $env:ChocolateyPackageName;
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)";
 $softwareName = 'usacloud*';
-$url32        = 'https://github.com/sacloud/usacloud/releases/download/v0.0.13/usacloud_windows-386.zip';
-$url64        = 'https://github.com/sacloud/usacloud/releases/download/v0.0.13/usacloud_windows-amd64.zip';
+$url32        = 'https://github.com/sacloud/usacloud/releases/download/v0.1.1/usacloud_windows-386.zip';
+$url64        = 'https://github.com/sacloud/usacloud/releases/download/v0.1.1/usacloud_windows-amd64.zip';
 $hashType     = 'sha512';
-$hash32       = 'AD7EA820490951E39AB961503A0637A1D7B3745A57D1FE58916337F6E628F41C063453469157FD1D5F2F6709250091E940AAB4D044BB5E0104EB52569419E356';
-$hash64       = 'AA4A7F1C9103C6025D9C5BDE57C8475E8C7A120CDE456C7872197CBF9C3756B66D910B2C5690D89DD44327E4059ACA5AB38E7B9D813E16C1815C705716DCBA84';
+$hash32       = '7FFE8F94DE5BC2184C33F188BEA70B2159A6BD2A4AD4304A2044A64A47841AAD1F658E40509A49554DBFD0A13733514A2816415FD4CCE2A7DA3ACCCF793BD943';
+$hash64       = 'A2036DF90A2F4136A5D81792B1AA6BBD5868F28CD13BFC5FAB0DFB74FF444625BF4B5BBA515F76C7A3575D8FD2904F9B145F05EE885BC44CDF6D9666028AA2FE';
 
 $packageArgs = @{
   packageName   = $packageName
