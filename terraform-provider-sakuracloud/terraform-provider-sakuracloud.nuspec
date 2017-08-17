@@ -3,7 +3,7 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>terraform-provider-sakuracloud</id>
-    <version>0.11.0</version>
+    <version>0.11.0.1</version>
     <owners>223n (@223n)</owners>
     <!-- ============================== -->
 
@@ -35,7 +35,10 @@
     </description>
     <releaseNotes>
 # EN
-## ChangeLog
+## ChangeLog (Chocolatey Installer)
+  - It changed to the way to install "%APPDATA%/terraform.d/plugins/" from the way to describe the path of "%APPDATA%\terraform.rc".
+
+## ChangeLog (terraform-provider-sakuracloud)
   - Fixed packet filter setting example of document #159
   - Support Object storage #161
   - Fixed resource regeneration judgment at packet filter update #162
@@ -53,7 +56,10 @@
 ----
 
 # JP
-## ChangeLog
+## ChangeLog (Chocolatey インストーラ)
+  - "%APPDATA%\terraform.rc"ファイルに記載する方法から、"%APPDATA%\terraform.d\plugins\"にインストールする方法に変更しました。
+
+## ChangeLog (terraform-provider-sakuracloud)
   - ドキュメントのパケットフィルタ設定例を修正 #159
   - オブジェクトストレージ対応 #161
   - パケットフィルタ更新時のリソース再生成判定を修正 #162
