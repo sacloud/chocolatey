@@ -3,7 +3,7 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>usacloud</id>
-    <version>0.0.13</version>
+    <version>0.1.1</version>
     <owners>223n (@223n)</owners>
     <!-- ============================== -->
 
@@ -46,12 +46,19 @@
     <releaseNotes>
 # EN
 ## ChangeLog
-  - Add textlint #159, #161
-  - Add command to get maintenance information #162
-  - Change field names in parameter template to hyphens separated #168
-  - Add --selector option #171
-  - Support "server ssh-exec" command execution with multiple hosts #173
-  - Corresponds to target specification of server name with 'server scp' command #174
+  - Add log output function of VPC router #179
+  - Add database logging function #181
+  - Add database backup function #183
+  - Add database monitoring function #185
+  - Change default key of monitor function #187
+  - Add function to switch multiple API keys #188
+  - Add summary command #190
+  - Add interface-driver item #192
+  - Add default targeting of billing CSV #194
+  - Refactoring package layout #195
+  - Fix summary command help #197
+  - Change log name of database #198
+  - Add validation skip of global option of config command #200
 
 ## Remarks
   - For details, please check CHANGELOG (Japanese) of GitHub.
@@ -61,12 +68,19 @@
 
 # JP
 ## ChangeLog
-  - textlint導入 #159 , #161
-  - メンテナンス情報取得コマンド追加 #162
-  - パラメータテンプレートでのフィールド名をハイフン区切りに変更 #168
-  - --selectorオプション追加 #171
-  - server ssh-execの複数ホストでのコマンド実行対応 #173
-  - server scpコマンドでのサーバ名での対象指定 #174
+  - VPCルータでのログ出力機能追加 #179
+  - データベースでのログ出力機能追加 #181
+  - データベースでのバックアップ機能追加 #183
+  - データベースでのモニター機能追加 #185
+  - モニター機能デフォルトキー変更 #187
+  - 複数のAPIキーの切り替え機能 #188
+  - summaryコマンドの追加 #190
+  - interface-driver項目の追加 #192
+  - 請求CSVでのデフォルトターゲット指定 #194
+  - パッケージレイアウトのリファクタリング #195
+  - summaryコマンドヘルプ修正 #197
+  - データベースのログ名称変更 #198
+  - configコマンドでのグローバルオプションのバリデーションスキップ #200
 
 ## Remarks
   - 詳しくは、GitHubのCHANGELOG(日本語)をご確認ください。
