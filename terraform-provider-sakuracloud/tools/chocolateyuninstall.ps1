@@ -7,5 +7,9 @@ $packageArgs = @{
   zipFileName64 = 'terraform-provider-sakuracloud_windows-amd64.zip'
 }
 
-Uninstall-ChocolateyZipPackage -PackageName $packageArgs['packageName'] -ZipFileName $packageArgs['zipFileName']
-Uninstall-ChocolateyZipPackage -PackageName $packageArgs['packageName'] -ZipFileName $packageArgs['zipFileName64']
+$os = Get-WmiObject -Class Win32_OperatingSystem;
+if ($os.OSarchitecture.Contains("64")) {
+  Uninstall-ChocolateyZipPackage -PackageName $packageArgs['packageName'] -ZipFileName $packageArgs['zipFileName64']
+} else {
+  Uninstall-ChocolateyZipPackage -PackageName $packageArgs['packageName'] -ZipFileName $packageArgs['zipFileName']
+}
