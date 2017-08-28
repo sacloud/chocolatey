@@ -3,7 +3,7 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>terraform-provider-sakuracloud</id>
-    <version>0.11.0.1</version>
+    <version>0.11.0.2</version>
     <owners>223n (@223n)</owners>
     <!-- ============================== -->
 
@@ -36,7 +36,10 @@
     <releaseNotes>
 # EN
 ## ChangeLog (Chocolatey Installer)
-  - It changed to the way to install "%APPDATA%/terraform.d/plugins/" from the way to describe the path of "%APPDATA%\terraform.rc".
+  - Check "%APPDATA%\terraform.rc" file and delete it automatically.
+  - If the "%APPDATA%\terraform.rc" file is also used other than "terraform-provider-sakuracloud", a warning message will be displayed and will not be deleted.
+  - Please check the information on GitHub.
+  - https://github.com/sacloud/chocolatey/wiki/About-terraform.rc-file
 
 ## ChangeLog (terraform-provider-sakuracloud)
   - Fixed packet filter setting example of document #159
@@ -57,7 +60,10 @@
 
 # JP
 ## ChangeLog (Chocolatey インストーラ)
-  - "%APPDATA%\terraform.rc"ファイルに記載する方法から、"%APPDATA%\terraform.d\plugins\"にインストールする方法に変更しました。
+  - "%APPDATA%\terraform.rc"ファイルを確認して、自動削除するようにしました。
+  - "%APPDATA%\terraform.rc"ファイルが、"terraform-provider-sakuracloud"以外にも使用している場合には、警告メッセージが表示されて、削除しません。
+  - GitHubの情報を確認してください。
+  - https://github.com/sacloud/chocolatey/wiki/About-terraform.rc-file
 
 ## ChangeLog (terraform-provider-sakuracloud)
   - ドキュメントのパケットフィルタ設定例を修正 #159
