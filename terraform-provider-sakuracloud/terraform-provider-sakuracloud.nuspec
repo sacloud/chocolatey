@@ -3,7 +3,7 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>terraform-provider-sakuracloud</id>
-    <version>0.11.0.2</version>
+    <version>0.12.0</version>
     <owners>223n (@223n)</owners>
     <!-- ============================== -->
 
@@ -35,22 +35,12 @@
     </description>
     <releaseNotes>
 # EN
-## ChangeLog (Chocolatey Installer)
-  - Check "%APPDATA%\terraform.rc" file and delete it automatically.
-  - If the "%APPDATA%\terraform.rc" file is also used other than "terraform-provider-sakuracloud", a warning message will be displayed and will not be deleted.
-  - Please check the information on GitHub.
-  - https://github.com/sacloud/chocolatey/wiki/About-terraform.rc-file
-
 ## ChangeLog (terraform-provider-sakuracloud)
-  - Fixed packet filter setting example of document #159
-  - Support Object storage #161
-  - Fixed resource regeneration judgment at packet filter update #162
-  - Celan up the sample .tf file #163
-  - Support "go get" #164
-  - Format of tf file using "terraform fmt" command #165
-  - Add icon (sakuracloud_icon) #167
-  - Add Server connector resource #168
-  - Code improvements #169
+  - Add NIC Driver (interface_driver) #173
+  - Change attribute name #174
+
+## Warning
+  - In this version, there are backward incompatible changes!
 
 ## Remarks
   - For details, please check CHANGELOG (Japanese) of GitHub.
@@ -59,22 +49,12 @@
 ----
 
 # JP
-## ChangeLog (Chocolatey インストーラ)
-  - "%APPDATA%\terraform.rc"ファイルを確認して、自動削除するようにしました。
-  - "%APPDATA%\terraform.rc"ファイルが、"terraform-provider-sakuracloud"以外にも使用している場合には、警告メッセージが表示されて、削除しません。
-  - GitHubの情報を確認してください。
-  - https://github.com/sacloud/chocolatey/wiki/About-terraform.rc-file
-
 ## ChangeLog (terraform-provider-sakuracloud)
-  - ドキュメントのパケットフィルタ設定例を修正 #159
-  - オブジェクトストレージ対応 #161
-  - パケットフィルタ更新時のリソース再生成判定を修正 #162
-  - サンプル.tfファイルのクリーンアップ #163
-  - go get対応 #164
-  - tfファイルのフォーマット #165
-  - アイコン(sakuracloud_icon)追加 #167
-  - サーバ コネクタリソース追加 #168
-  - コード改善 #169
+  - NICドライバ(interface_driver)の追加 #173
+  - 属性名の変更 #174
+
+## 警告
+  - このバージョンでは、後方互換性のない変更があります！
 
 ## Remarks
   - 詳しくは、GitHubのCHANGELOG(日本語)をご確認ください。
