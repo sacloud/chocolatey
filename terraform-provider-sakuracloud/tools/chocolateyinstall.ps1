@@ -6,7 +6,7 @@ $softwareName = 'terraform-provider-sakuracloud*';
 $url          = 'https://github.com/sacloud/terraform-provider-sakuracloud/releases/download/v0.12.0/terraform-provider-sakuracloud_windows-386.zip';
 $url64        = 'https://github.com/sacloud/terraform-provider-sakuracloud/releases/download/v0.12.0/terraform-provider-sakuracloud_windows-amd64.zip';
 $checkSum     = 'sha512';
-$hash32       = '11180BE310D27B3075B2FE0F2AE1A655F1F68E3A2FE8CFA016B0D7F60C966FFA34AF89B42A1914F45DFEC05FA25CA91FE7FD990A3F9B04404CF30A914EF82E5E';
+$hash32       = '141AFCA0A2B28F2DF433906A6286E457C9CF30E1062423B8850DAA2E2F7BC0DF099AEF6EBD0EA193050302F18A231C399D4ED1CC39689A207B162C81F54B9632';
 $hash64       = 'FED47A0212A285CBC253576E00FF2B760AB1F4D76ADE4E22EC56DD301AE76C07E2172220EA77C4AE77CEBCDC1BDD99B63330D691758F480FF9787DB4F24BAB02';
 
 $packageArgs = @{
