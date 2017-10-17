@@ -3,7 +3,7 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>usacloud</id>
-    <version>0.2.1</version>
+    <version>0.2.2</version>
     <owners>223n (@223n)</owners>
     <!-- ============================== -->
 
@@ -46,9 +46,8 @@
     <releaseNotes>
 # EN
 ## ChangeLog
-  - Change flag name ("enabled" -> "disabled") #215
-  - Added global option for target zone and API root URL setting. #216
-  －Added Class attribute to startup script. #218
+  - Added NFS appliance plan. #220
+  - Update documents. #221
 
 ## Remarks
   - For details, please check CHANGELOG (Japanese) of GitHub.
@@ -58,9 +57,8 @@
 
 # JP
 ## ChangeLog
-  - フラグ名変更 enabled -> disabled #215
-  - 対象ゾーンとAPIのルートURL設定用グローバルオプション追加 #216
-  - スタートアップスクリプトへClass属性追加 #218
+  - NFSアプライアンス プラン追加 #220
+  - ドキュメント更新 #221
 
 ## Remarks
   - 詳しくは、GitHubのCHANGELOG(日本語)をご確認ください。
