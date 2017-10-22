@@ -3,7 +3,7 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>terraform-provider-sakuracloud</id>
-    <version>0.14.0</version>
+    <version>0.14.0.1</version>
     <owners>223n (@223n)</owners>
     <!-- ============================== -->
 
@@ -26,12 +26,16 @@
 # EN
   - It is a plug-in for operating SAKURA cloud from Terraform.
   - This plug-in is developed by SAKURA cloud user communication as SAKURA Internet Inc. official recognition tool.
+  - This package depends on terraform.
+  - Therefore, if terraform is not installed, it will be installed.
 
 ----
 
 # JP
   - Terraformからさくらのクラウドを操作するためのプラグインです。
   - このプラグインはさくらインターネット公認ツールとしてさくらのクラウドユーザコミュニティによって開発されています。
+  - このパッケージは、terraformが必要です。
+  - そのため、terraformがインストールされていない場合には、インストールされます。
     </description>
     <releaseNotes>
 # EN
@@ -61,6 +65,9 @@
   - https://github.com/sacloud/terraform-provider-sakuracloud/releases/
     </releaseNotes>
     <!-- =============================== -->      
+    <dependencies>
+      <dependency id="Terraform" version="0.10.7" />
+    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
