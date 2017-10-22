@@ -3,7 +3,7 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>terraform-provider-sakuracloud</id>
-    <version>0.13.0</version>
+    <version>0.14.0</version>
     <owners>223n (@223n)</owners>
     <!-- ============================== -->
 
@@ -36,7 +36,11 @@
     <releaseNotes>
 # EN
 ## ChangeLog (terraform-provider-sakuracloud)
-  - Add NFS appliance #176
+  - Added site-to-site VPN connection information in VPC router. #184
+  - Added resource.(Packet filter rule) #185
+  - Two stage shutdown implemented. #186
+  - Added "Monitors expiration date of SSL server certificate with simple monitoring". #188
+  - Fixed internal ID retention method with simple monitoring method. #190
 
 ## Remarks
   - For details, please check CHANGELOG (Japanese) of GitHub.
@@ -46,7 +50,11 @@
 
 # JP
 ## ChangeLog (terraform-provider-sakuracloud)
-  - NFSアプライアンス追加 #176
+  - VPCルータでのサイト間VPN接続情報追加 #184
+  - リソース追加:パケットフィルタルール #185
+  - 2段階シャットダウン実装 #186
+  - シンプル監視でのSSLサーバ証明書 有効期限監視 #188
+  - シンプル監視方法での内部ID保持方法の修正 #190
 
 ## Remarks
   - 詳しくは、GitHubのCHANGELOG(日本語)をご確認ください。
