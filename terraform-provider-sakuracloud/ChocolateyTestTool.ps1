@@ -27,7 +27,7 @@ function CreatePackage {
 }
 
 function TestInstall {
-    choco install $packName -s .\ -f;
+    choco install $packName -s .\ -f -s "'$pwd;https://chocolatey.org/api/v2/'";
 }
 
 function TestUninstall {
