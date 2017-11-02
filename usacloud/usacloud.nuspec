@@ -3,7 +3,7 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>usacloud</id>
-    <version>0.3.0</version>
+    <version>0.3.1</version>
     <owners>223n (@223n)</owners>
     <!-- ============================== -->
 
@@ -46,15 +46,8 @@
     <releaseNotes>
 # EN
 ## ChangeLog
-  - Corresponds to out of memory at archive upload.　＃225, #227
-  - Added VNC snapshot function. #226
-  - Remove Plesk public archive. #230
-  - Designation of CentOS 6 public archive by ostype parameter. #231
-  - Monitor expiration date of "SSL server certificate" with "Simple monitoring". #232
-  - Config list command error correction when then config directory does not exist. #233
-  - Added Integration test. (Initial implementation) #235
-  - Fixed an issue that FTPS upload did not respond with response 226. #236
-  - Added IPv4/IPv6 related commands. #237
+  - Correct typing error of message #239
+  - Correct response processing of VNC API #240
 
 ## Remarks
   - For details, please check CHANGELOG (Japanese) of GitHub.
@@ -64,15 +57,8 @@
 
 # JP
 ## ChangeLog
-  - アーカイブアップロード時のout of memory対応 #225, #227
-  - VNCスナップショット機能の追加 #226
-  - Pleskパブリックアーカイブを除去 #230
-  - ostypeパラメータによるCentOS6パブリックアーカイブの指定 #231
-  - シンプル監視でのSSLサーバ証明書 有効期限監視 #232
-  - configディレクトリが存在しない場合のconfig listコマンドエラー修正 #233
-  - 統合テスト(初期実装) #235
-  - FTPSアップロードでレスポンス226が応答されない問題の修正 #236
-  - IPv4/IPv6関連コマンドの追加 #237
+  - メッセージtypo修正 #239
+  - VNC APIのレスポンス処理修正 #240
 
 ## Remarks
   - 詳しくは、GitHubのCHANGELOG(日本語)をご確認ください。
