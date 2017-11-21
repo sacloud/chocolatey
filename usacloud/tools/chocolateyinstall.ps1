@@ -1,17 +1,13 @@
-﻿# IMPORTANT: Before releasing this package, copy/paste the next 2 lines into PowerShell to remove all comments from this file:
-#   $f='c:\path\to\thisFile.ps1'
-#   gc $f | ? {$_ -notmatch "^\s*#"} | % {$_ -replace '(^.*?)\s*?[^``]#.*','$1'} | Out-File $f+".~" -en utf8; mv -fo $f+".~" $f
-
-$ErrorActionPreference = 'Stop';
+﻿$ErrorActionPreference = 'Stop';
 
 $packageName  = $env:ChocolateyPackageName;
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)";
 $softwareName = 'usacloud*';
-$url32        = 'https://github.com/sacloud/usacloud/releases/download/v0.1.1/usacloud_windows-386.zip';
-$url64        = 'https://github.com/sacloud/usacloud/releases/download/v0.1.1/usacloud_windows-amd64.zip';
+$url32        = 'https://github.com/sacloud/usacloud/releases/download/v0.4.0/usacloud_windows-386.zip';
+$url64        = 'https://github.com/sacloud/usacloud/releases/download/v0.4.0/usacloud_windows-amd64.zip';
 $hashType     = 'sha512';
-$hash32       = '7FFE8F94DE5BC2184C33F188BEA70B2159A6BD2A4AD4304A2044A64A47841AAD1F658E40509A49554DBFD0A13733514A2816415FD4CCE2A7DA3ACCCF793BD943';
-$hash64       = 'A2036DF90A2F4136A5D81792B1AA6BBD5868F28CD13BFC5FAB0DFB74FF444625BF4B5BBA515F76C7A3575D8FD2904F9B145F05EE885BC44CDF6D9666028AA2FE';
+$hash32       = 'A43292E7E4AD99223FC6E311F495C1D52F98BEB5319555E737A7B61AB5EB0FC23038ABAB039E8C1ACB890A0FDAC028E0ABBAE54CA2E08625D020E87BB3216453';
+$hash64       = '62258B1CD69DCF21750E202FCEBB90200DD7578C967426125F6069B68B62B824CBFE0E3C8C4C838B0A80ECF3D55CC46312B4B8851AEED9243FBCE92F5E62E007';
 
 $packageArgs = @{
   packageName   = $packageName
