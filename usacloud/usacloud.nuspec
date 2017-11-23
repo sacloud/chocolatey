@@ -3,7 +3,7 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>usacloud</id>
-    <version>0.4.0</version>
+    <version>0.5.0</version>
     <owners>223n (@223n)</owners>
     <!-- ============================== -->
 
@@ -46,7 +46,9 @@
     <releaseNotes>
 # EN
 ## ChangeLog
-  - Added function to VPC router. ( DNS server distribution by DHCP / Firewall per NIC ) #242
+  - Build static content for distribution site #244
+  - Release site HTTPS compliance #245
+  - Compatible with proprietary host #246
 
 ## Remarks
   - For details, please check CHANGELOG (Japanese) of GitHub.
@@ -56,7 +58,9 @@
 
 # JP
 ## ChangeLog
-  - VPCルータへの機能追加(DHCPでのDNSサーバ配布/NICごとのファイアウォール) #242
+  - 配布サイト用に静的コンテンツのビルドを実行 #244
+  - リリースサイトのHTTPS対応 #245
+  - 専有ホスト対応 #246
 
 ## Remarks
   - 詳しくは、GitHubのCHANGELOG(日本語)をご確認ください。
