@@ -1,6 +1,6 @@
 $packName = 'terraform-provider-sakuracloud';
-$zipX32   = 'terraform-provider-sakuracloud_windows-386.zip';
-$zipX64   = 'terraform-provider-sakuracloud_windows-amd64.zip';
+$zipX32   = 'terraform-provider-sakuracloud_*windows-386.zip';
+$zipX64   = 'terraform-provider-sakuracloud_*windows-amd64.zip';
 
 $typename = "System.Management.Automation.Host.ChoiceDescription";
 $yes = New-Object $typename("&Yes", "é¿çsÇ∑ÇÈ");
@@ -15,9 +15,9 @@ function FileHashCheck {
     if ($answer -eq 0) {
         Write-Host '-----------------------------------------------------';
         Write-Host '<32bit>';
-        Get-FileHash $zipX32 -Algorithm SHA512 | Format-List;
+        Get-ChildItem . $zipX32 -Name | ForEach-Object $_ { Get-FileHash $_ -Algorithm SHA512 | Format-List };
         Write-Host '<64bit>';
-        Get-FileHash $zipX64 -Algorithm SHA512 | Format-List;
+        Get-ChildItem . $zipX64 -Name | ForEach-Object $_ { Get-FileHash $_ -Algorithm SHA512 | Format-List };
         Write-Host '-----------------------------------------------------';
     }
 }
